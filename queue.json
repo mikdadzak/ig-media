@@ -11,7 +11,8 @@
   {
     "when": "2026-10-25 12:30",
     "kind": "reel",
-    "status": "pending",
+    "status": "posted",
+    "media_id": "18138805855636220",
     "id": "2026-10-25 12:30|reel_the_edit_sound.mp4",
     "files": [
       "queue_media/2026-10-25-12-30-reel-the-edit-sound-mp4-0.mp4",
@@ -81,6 +82,19 @@
     "caption_file": "queue_captions/2026-10-31-19-00-g04-vase-ig-jpg.txt"
   },
   {
+    "when": "2026-11-01 12:30",
+    "kind": "carousel",
+    "status": "pending",
+    "id": "2026-11-01 12:30|me_IMG_1119_ig.jpg",
+    "files": [
+      "queue_media/2026-11-01-12-30-me-IMG-1119-ig-jpg-0.jpg",
+      "queue_media/2026-11-01-12-30-me-IMG-1119-ig-jpg-1.jpg",
+      "queue_media/2026-11-01-12-30-me-IMG-1119-ig-jpg-2.jpg",
+      "queue_media/2026-11-01-12-30-me-IMG-1119-ig-jpg-3.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-01-12-30-me-IMG-1119-ig-jpg.txt"
+  },
+  {
     "when": "2026-11-02 19:00",
     "kind": "image",
     "status": "pending",
@@ -99,6 +113,17 @@
       "queue_media/2026-11-03-19-00-g03-dune-ig-jpg-0.jpg"
     ],
     "caption_file": "queue_captions/2026-11-03-19-00-g03-dune-ig-jpg.txt"
+  },
+  {
+    "when": "2026-11-05 19:00",
+    "kind": "carousel",
+    "status": "pending",
+    "id": "2026-11-05 19:00|me_IMG_1123_ig.jpg",
+    "files": [
+      "queue_media/2026-11-05-19-00-me-IMG-1123-ig-jpg-0.jpg",
+      "queue_media/2026-11-05-19-00-me-IMG-1123-ig-jpg-1.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-05-19-00-me-IMG-1123-ig-jpg.txt"
   },
   {
     "when": "2026-11-07 19:00",

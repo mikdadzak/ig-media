@@ -470,7 +470,7 @@ def sync_cloud():
     git = ["git", "-C", str(HOSTING)]
     subprocess.run(git + ["pull", "-q", "--rebase"], check=True)
     cloud_q = HOSTING / "queue.json"
-    cloud = {item_id(x): x for x in (json.loads(cloud_q.read_text()) if cloud_q.exists() else [])}
+    cloud = {x.get("id") or item_id(x): x for x in (json.loads(cloud_q.read_text()) if cloud_q.exists() else [])}
     local = queue_load()
     for x in local:
         c = cloud.get(item_id(x))
