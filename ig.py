@@ -399,10 +399,11 @@ def reply(comment_id, text):
     print(f"Replied: {res.get('id')}")
 
 
-def notify(title, body):
+def notify(title, body, subtitle=""):
     """macOS notification; quietly skipped when not running in a GUI session."""
     esc = lambda s: s.replace("\\", "\\\\").replace('"', '\\"')
-    subprocess.run(["osascript", "-e", f'display notification "{esc(body)}" with title "{esc(title)}"'],
+    sub = f' subtitle "{esc(subtitle)}"' if subtitle else ""
+    subprocess.run(["osascript", "-e", f'display notification "{esc(body)}" with title "{esc(title)}"{sub}'],
                    capture_output=True)
 
 
@@ -450,8 +451,45 @@ def _checkin(days=7):
         body = f"{me['followers_count']} followers. Latest post: {short[-1]}"
     else:
         body = f"{me['followers_count']} followers. Nothing posted in the last {days} days."
-    notify("Instagram check-in", body)
+    nudge = pick_nudge(recent, problems)
+    if nudge:
+        lines.append(f"\nNudge: {nudge}")
+    notify("Instagram check-in", body, subtitle=nudge)
     print("\n".join(lines))
+
+
+def pick_nudge(recent, problems):
+    """One prompt for the user to bring back to Claude, most useful first. The user asked for these
+    reminders on 2026-10-25: 'check Instagram', 'weekly review', and sending new photos."""
+    state_f = HOME / "reports" / ".state.json"
+    state = json.loads(state_f.read_text()) if state_f.exists() else {}
+    comments = 0
+    for p in recent:
+        try:
+            comments += api("GET", p["media_id"], {"fields": "comments_count"}).get("comments_count", 0)
+        except SystemExit:
+            pass
+    new_comments = comments - state.get("comments", 0)
+    state["comments"] = comments
+    state_f.write_text(json.dumps(state))
+    pending = [x for x in queue_load() if x["status"] == "pending"]
+    week_ahead = (dt.datetime.now() + dt.timedelta(days=7)).strftime("%Y-%m-%d %H:%M")
+    own = [x for x in pending if x["when"] <= week_ahead
+           and any("/originals/" in f or "/me_" in f or "desk-editorial" in f for f in x["files"])]
+    today = dt.date.today()
+    if problems:
+        return "Say \"check Instagram\" to Claude."
+    if new_comments > 0:
+        return f"{new_comments} new comment(s). Reply in the app, or say \"check Instagram\"."
+    if today.weekday() == 0:
+        return f"Monday: say \"weekly review\" to Claude. {len(pending)} posts left in the queue."
+    if len(pending) < 7:
+        return f"Only {len(pending)} posts left. Say \"weekly review\" to plan the next batch."
+    if len(own) < 2 or today.weekday() == 3:
+        return "Took any photos? Paste them to Claude to edit for the feed."
+    if today.weekday() in (2, 5):
+        return "Say \"check Instagram\" to see how posts are doing."
+    return ""
 
 
 def item_id(x):
