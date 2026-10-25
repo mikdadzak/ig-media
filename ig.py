@@ -468,7 +468,7 @@ def sync_cloud():
     if not (HOSTING / ".git").exists():
         subprocess.run(["gh", "repo", "clone", repo, str(HOSTING)], check=True)
     git = ["git", "-C", str(HOSTING)]
-    subprocess.run(git + ["pull", "-q", "--rebase"], check=True)
+    subprocess.run(git + ["pull", "-q", "--rebase", "--autostash"], check=True)
     cloud_q = HOSTING / "queue.json"
     cloud = {x.get("id") or item_id(x): x for x in (json.loads(cloud_q.read_text()) if cloud_q.exists() else [])}
     local = queue_load()
@@ -527,6 +527,14 @@ def sync_cloud():
         print(f"Synced {sum(1 for e in out if e['status'] == 'pending')} pending item(s) to GitHub")
     else:
         print("Cloud queue already up to date")
+    # GitHub's cron is best-effort (runs are often late or skipped), so when the Mac is awake and
+    # something is due, trigger the runner directly. GitHub stays the only publisher.
+    now = dt.datetime.now()
+    window = (now - dt.timedelta(hours=GRACE_HOURS)).strftime("%Y-%m-%d %H:%M")
+    due = [x for x in local if x["status"] == "pending" and window <= x["when"] <= now.strftime("%Y-%m-%d %H:%M")]
+    if due:
+        r = subprocess.run(["gh", "workflow", "run", "post.yml", "-R", repo], capture_output=True, text=True)
+        print(f"Triggered runner for {len(due)} due item(s)" if r.returncode == 0 else f"Trigger failed: {r.stderr.strip()}")
 
 
 def refresh_token():
