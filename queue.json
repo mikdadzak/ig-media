@@ -24,12 +24,12 @@
     "when": "2026-10-26 19:00",
     "kind": "image",
     "status": "posted",
+    "media_id": "18082072865712022",
     "id": "2026-10-26 19:00|105_mono_ig.jpg",
     "files": [
       "queue_media/2026-10-26-19-00-105-mono-ig-jpg-0.jpg"
     ],
-    "caption_file": "queue_captions/2026-10-26-19-00-105-mono-ig-jpg.txt",
-    "media_id": "18082072865712022"
+    "caption_file": "queue_captions/2026-10-26-19-00-105-mono-ig-jpg.txt"
   },
   {
     "when": "2026-10-27 19:00",
