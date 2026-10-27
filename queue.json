@@ -35,12 +35,12 @@
     "when": "2026-10-27 19:00",
     "kind": "image",
     "status": "posted",
+    "media_id": "18188398129412570",
     "id": "2026-10-27 19:00|g06_lamp_room_ig.jpg",
     "files": [
       "queue_media/2026-10-27-19-00-g06-lamp-room-ig-jpg-0.jpg"
     ],
-    "caption_file": "queue_captions/2026-10-27-19-00-g06-lamp-room-ig-jpg.txt",
-    "media_id": "18188398129412570"
+    "caption_file": "queue_captions/2026-10-27-19-00-g06-lamp-room-ig-jpg.txt"
   },
   {
     "when": "2026-10-28 12:30",
