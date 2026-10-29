@@ -68,12 +68,13 @@
   {
     "when": "2026-10-29 19:00",
     "kind": "image",
-    "status": "pending",
+    "status": "posted",
     "id": "2026-10-29 19:00|97_poster_ig_sage_mikkiy.jpg",
     "files": [
       "queue_media/2026-10-29-19-00-97-poster-ig-sage-mikkiy-jpg-0.jpg"
     ],
-    "caption_file": "queue_captions/2026-10-29-19-00-97-poster-ig-sage-mikkiy-jpg.txt"
+    "caption_file": "queue_captions/2026-10-29-19-00-97-poster-ig-sage-mikkiy-jpg.txt",
+    "media_id": "18647371426049268"
   },
   {
     "when": "2026-10-30 12:30",
