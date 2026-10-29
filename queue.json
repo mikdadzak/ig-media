@@ -141,6 +141,16 @@
     "caption_file": "queue_captions/2026-11-03-19-00-g03-dune-ig-jpg.txt"
   },
   {
+    "when": "2026-11-04 19:00",
+    "kind": "image",
+    "status": "pending",
+    "id": "2026-11-04 19:00|me_restaurant_editorial_ig.jpg",
+    "files": [
+      "queue_media/2026-11-04-19-00-me-restaurant-editorial-ig-jpg-0.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-04-19-00-me-restaurant-editorial-ig-jpg.txt"
+  },
+  {
     "when": "2026-11-05 19:00",
     "kind": "carousel",
     "status": "pending",
@@ -160,6 +170,16 @@
       "queue_media/2026-11-07-19-00-g05-wet-car-ig-jpg-0.jpg"
     ],
     "caption_file": "queue_captions/2026-11-07-19-00-g05-wet-car-ig-jpg.txt"
+  },
+  {
+    "when": "2026-11-07 19:00",
+    "kind": "image",
+    "status": "pending",
+    "id": "2026-11-07 19:00|me_three_moods_ig.jpg",
+    "files": [
+      "queue_media/2026-11-07-19-00-me-three-moods-ig-jpg-0.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-07-19-00-me-three-moods-ig-jpg.txt"
   },
   {
     "when": "2026-11-08 12:30",
