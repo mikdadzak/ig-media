@@ -455,7 +455,7 @@
   {
     "when": "2026-11-28 19:00",
     "kind": "image",
-    "status": "pending",
+    "status": "paused_lean_redo",
     "id": "2026-11-28 19:00|me_blue_hour_ig.jpg",
     "files": [
       "queue_media/2026-11-28-19-00-me-blue-hour-ig-jpg-0.jpg"
