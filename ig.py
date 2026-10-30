@@ -543,12 +543,13 @@ def sync_cloud():
             src = Path(f)
             if src.suffix.lower() in (".mp4", ".mov"):
                 dst = HOSTING / "queue_media" / f"{slug}-{i}{src.suffix.lower()}"
-                if not dst.exists():
+                if not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime:
                     shutil.copy(src, dst)
             else:
                 is_cover = x["kind"] == "reel" and i > 0
                 dst = HOSTING / "queue_media" / f"{slug}-{i}.jpg"
-                if not dst.exists():
+                # Re-upload when the source was edited after the last sync (re-rendered designs).
+                if not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime:
                     shutil.copy(to_jpeg(src, feed=not is_cover), dst)
             files.append(dst.relative_to(HOSTING).as_posix())
         cap = HOSTING / "queue_captions" / f"{slug}.txt"
