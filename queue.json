@@ -308,6 +308,16 @@
     "caption_file": "queue_captions/2026-11-14-19-00-t04-cafe-rain-ig-jpg.txt"
   },
   {
+    "when": "2026-11-14 19:00",
+    "kind": "image",
+    "status": "pending",
+    "id": "2026-11-14 19:00|me_ace_ig.jpg",
+    "files": [
+      "queue_media/2026-11-14-19-00-me-ace-ig-jpg-0.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-14-19-00-me-ace-ig-jpg.txt"
+  },
+  {
     "when": "2026-11-15 12:30",
     "kind": "carousel",
     "status": "pending",
@@ -342,6 +352,16 @@
     "caption_file": "queue_captions/2026-11-17-19-00-t07-record-corner-ig-jpg.txt"
   },
   {
+    "when": "2026-11-17 19:00",
+    "kind": "image",
+    "status": "pending",
+    "id": "2026-11-17 19:00|me_heavy_head_ig.jpg",
+    "files": [
+      "queue_media/2026-11-17-19-00-me-heavy-head-ig-jpg-0.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-17-19-00-me-heavy-head-ig-jpg.txt"
+  },
+  {
     "when": "2026-11-19 19:00",
     "kind": "image",
     "status": "backlog",
@@ -352,6 +372,26 @@
     "caption_file": "queue_captions/2026-11-19-19-00-t06-orange-tower-ig-jpg.txt"
   },
   {
+    "when": "2026-11-19 19:00",
+    "kind": "image",
+    "status": "pending",
+    "id": "2026-11-19 19:00|me_colour_card_ig.jpg",
+    "files": [
+      "queue_media/2026-11-19-19-00-me-colour-card-ig-jpg-0.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-19-19-00-me-colour-card-ig-jpg.txt"
+  },
+  {
+    "when": "2026-11-20 19:00",
+    "kind": "image",
+    "status": "pending",
+    "id": "2026-11-20 19:00|me_bauhaus_ig.jpg",
+    "files": [
+      "queue_media/2026-11-20-19-00-me-bauhaus-ig-jpg-0.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-20-19-00-me-bauhaus-ig-jpg.txt"
+  },
+  {
     "when": "2026-11-21 19:00",
     "kind": "image",
     "status": "pending",
@@ -360,5 +400,15 @@
       "queue_media/2026-11-21-19-00-t08-motion-tower-ig-jpg-0.jpg"
     ],
     "caption_file": "queue_captions/2026-11-21-19-00-t08-motion-tower-ig-jpg.txt"
+  },
+  {
+    "when": "2026-11-22 19:00",
+    "kind": "image",
+    "status": "pending",
+    "id": "2026-11-22 19:00|me_stay_focused_ig.jpg",
+    "files": [
+      "queue_media/2026-11-22-19-00-me-stay-focused-ig-jpg-0.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-22-19-00-me-stay-focused-ig-jpg.txt"
   }
 ]
