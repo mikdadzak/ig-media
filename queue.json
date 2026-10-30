@@ -311,7 +311,7 @@
   {
     "when": "2026-11-14 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-14 19:00|me_ace_ig.jpg",
     "files": [
       "queue_media/2026-11-14-19-00-me-ace-ig-jpg-0.jpg"
@@ -385,7 +385,7 @@
   {
     "when": "2026-11-19 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-19 19:00|me_colour_card_ig.jpg",
     "files": [
       "queue_media/2026-11-19-19-00-me-colour-card-ig-jpg-0.jpg"
@@ -395,7 +395,7 @@
   {
     "when": "2026-11-20 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-20 19:00|me_bauhaus_ig.jpg",
     "files": [
       "queue_media/2026-11-20-19-00-me-bauhaus-ig-jpg-0.jpg"
@@ -415,7 +415,7 @@
   {
     "when": "2026-11-22 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-22 19:00|me_stay_focused_ig.jpg",
     "files": [
       "queue_media/2026-11-22-19-00-me-stay-focused-ig-jpg-0.jpg"
@@ -431,6 +431,16 @@
       "queue_media/2026-11-23-19-00-me-heritage-ig-jpg-0.jpg"
     ],
     "caption_file": "queue_captions/2026-11-23-19-00-me-heritage-ig-jpg.txt"
+  },
+  {
+    "when": "2026-11-24 19:00",
+    "kind": "image",
+    "status": "pending",
+    "id": "2026-11-24 19:00|me_the_daily_ig.jpg",
+    "files": [
+      "queue_media/2026-11-24-19-00-me-the-daily-ig-jpg-0.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-24-19-00-me-the-daily-ig-jpg.txt"
   },
   {
     "when": "2026-11-25 19:00",
@@ -453,9 +463,19 @@
     "caption_file": "queue_captions/2026-11-26-19-00-me-camel-ig-jpg.txt"
   },
   {
+    "when": "2026-11-27 19:00",
+    "kind": "image",
+    "status": "pending",
+    "id": "2026-11-27 19:00|me_the_plan_ig.jpg",
+    "files": [
+      "queue_media/2026-11-27-19-00-me-the-plan-ig-jpg-0.jpg"
+    ],
+    "caption_file": "queue_captions/2026-11-27-19-00-me-the-plan-ig-jpg.txt"
+  },
+  {
     "when": "2026-11-28 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-28 19:00|me_blue_hour_ig.jpg",
     "files": [
       "queue_media/2026-11-28-19-00-me-blue-hour-ig-jpg-0.jpg"
