@@ -101,7 +101,7 @@
   {
     "when": "2026-10-31 19:00",
     "kind": "carousel",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-10-31 19:00|me_calm_pockets_poster_ig.jpg",
     "files": [
       "queue_media/2026-10-31-19-00-me-calm-pockets-poster-ig-jpg-0.jpg",
@@ -177,7 +177,7 @@
   {
     "when": "2026-11-06 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-06 19:00|me_night_shift_ig.jpg",
     "files": [
       "queue_media/2026-11-06-19-00-me-night-shift-ig-jpg-0.jpg"
@@ -239,7 +239,7 @@
   {
     "when": "2026-11-09 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-09 19:00|me_off_duty_ig.jpg",
     "files": [
       "queue_media/2026-11-09-19-00-me-off-duty-ig-jpg-0.jpg"
@@ -291,7 +291,7 @@
   {
     "when": "2026-11-13 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-13 19:00|me_clear_vision_ig.jpg",
     "files": [
       "queue_media/2026-11-13-19-00-me-clear-vision-ig-jpg-0.jpg"
@@ -355,7 +355,7 @@
   {
     "when": "2026-11-17 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-17 19:00|me_heavy_head_ig.jpg",
     "files": [
       "queue_media/2026-11-17-19-00-me-heavy-head-ig-jpg-0.jpg"
@@ -365,7 +365,7 @@
   {
     "when": "2026-11-18 19:00",
     "kind": "image",
-    "status": "paused_lean_redo",
+    "status": "pending",
     "id": "2026-11-18 19:00|me_step_out_ig.jpg",
     "files": [
       "queue_media/2026-11-18-19-00-me-step-out-ig-jpg-0.jpg"

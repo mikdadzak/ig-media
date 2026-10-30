@@ -496,6 +496,9 @@ def item_id(x):
     return f"{x['when']}|{Path(x['files'][0]).name}"
 
 
+RUNNER_STATUSES = ("posted", "posting", "stale", "failed")
+
+
 def sync_cloud():
     """Mirror the local queue into the media repo for the GitHub runner, and pull back its results.
 
@@ -512,7 +515,9 @@ def sync_cloud():
     local = queue_load()
     for x in local:
         c = cloud.get(item_id(x))
-        if c and c["status"] != "pending" and x["status"] in ("pending", "posting"):
+        # Only pull back statuses the runner itself sets; Mac-side holds (paused, backlog) are not runner results,
+        # so a stale "paused" in the cloud copy must not undo a local restore.
+        if c and c["status"] in RUNNER_STATUSES and x["status"] in ("pending", "posting"):
             x["status"] = c["status"]
             for k in ("media_id", "error"):
                 if k in c:
