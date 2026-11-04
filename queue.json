@@ -160,12 +160,13 @@
   {
     "when": "2026-11-04 19:00",
     "kind": "image",
-    "status": "pending",
+    "status": "posted",
     "id": "2026-11-04 19:00|me_restaurant_editorial_ig.jpg",
     "files": [
       "queue_media/2026-11-04-19-00-me-restaurant-editorial-ig-jpg-0.jpg"
     ],
-    "caption_file": "queue_captions/2026-11-04-19-00-me-restaurant-editorial-ig-jpg.txt"
+    "caption_file": "queue_captions/2026-11-04-19-00-me-restaurant-editorial-ig-jpg.txt",
+    "media_id": "18168518386493641"
   },
   {
     "when": "2026-11-05 19:00",
