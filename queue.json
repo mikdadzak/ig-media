@@ -204,12 +204,13 @@
   {
     "when": "2026-11-07 19:00",
     "kind": "image",
-    "status": "pending",
+    "status": "posted",
     "id": "2026-11-07 19:00|me_three_moods_ig.jpg",
     "files": [
       "queue_media/2026-11-07-19-00-me-three-moods-ig-jpg-0.jpg"
     ],
-    "caption_file": "queue_captions/2026-11-07-19-00-me-three-moods-ig-jpg.txt"
+    "caption_file": "queue_captions/2026-11-07-19-00-me-three-moods-ig-jpg.txt",
+    "media_id": "17964220845233098"
   },
   {
     "when": "2026-11-08 12:30",
