@@ -326,12 +326,12 @@
     "when": "2026-11-14 19:00",
     "kind": "image",
     "status": "posted",
+    "media_id": "17949817215071773",
     "id": "2026-11-14 19:00|me_ace_ig.jpg",
     "files": [
       "queue_media/2026-11-14-19-00-me-ace-ig-jpg-0.jpg"
     ],
-    "caption_file": "queue_captions/2026-11-14-19-00-me-ace-ig-jpg.txt",
-    "media_id": "17949817215071773"
+    "caption_file": "queue_captions/2026-11-14-19-00-me-ace-ig-jpg.txt"
   },
   {
     "when": "2026-11-15 12:30",
